@@ -23,7 +23,7 @@ const AllNews = () => {
               <Link
                 to={`/home/allnews/${filteredNews.id}/${news.id}?viewer=Khing`}
               >
-                <div key={news.id} className="border p-4 mb-4 ">
+                <div key={news.id} className="border rounded-lg p-4 mb-4 text-left shadow-md ">
                   <p className="text-gray-400 text-sm m-1">{news.date}</p>
                   <h4 className="text-slate-800 font-semibold m-1">
                     {news.headline}
