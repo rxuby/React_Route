@@ -14,7 +14,7 @@ const AllNews = () => {
     <div className="p-4 mt-14">
       {filteredNews ? (
         <>
-          <h3>{filteredNews.name}</h3>
+          <h3 className="mb-4 text-slate-800 text-xl font-bold ">{filteredNews.name}</h3>
           {filteredNews.news_type
             .sort(
               (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
