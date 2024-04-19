@@ -7,6 +7,7 @@ const Test1 = () => {
       <button className={styles.button2}>CLICK ME</button>
       <button className={styles.button3}>CLICK ME</button>
       <button className={styles.button4}>CLICK ME</button>
+      <button className={styles.button5}>CLICK ME</button>
     </div>
   );
 };
