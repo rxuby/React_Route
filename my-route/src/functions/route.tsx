@@ -13,12 +13,33 @@ import HomePage from "@components/HomePage";
 import LayoutHome from "@components/LayoutHome";
 import AllNew from "@components/AllNew";
 import DetailNew from "@components/DetailNew";
+import Test1 from "@components/Test1";
+import Test2 from "@components/Test2";
+import Test3_1 from "@components/Test31";
+import Test3_2 from "@components/Test32";
 
 const route = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />,
   },
+  {
+    path: "test1",
+    element: <Test1 />,
+  },
+  {
+    path: "test2",
+    element: <Test2 />,
+  },
+  {
+    path: "test31",
+    element: <Test3_1 />,
+  },
+  {
+    path: "test32",
+    element: <Test3_2 />,
+  },
+
   {
     path: "/",
     element: <MainPage />,

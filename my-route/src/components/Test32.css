@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.s-nav {
+  height: 320px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(72, 92, 96, 1) 0%,
+    rgba(45, 43, 77, 1) 63%,
+    rgba(28, 27, 46, 1) 93%
+  );
+  position: relative;
+}
+
+.s-nav img {
+  width: 30px;
+  margin: 20px;
+}
+
+.s-container {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  width: 390px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.s-abalance {
+  text-align: center;
+  padding-top: 90px;
+}
+
+.s-card {
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid hsla(243, 20%, 19%, 0.068);
+  border-radius: 5px;
+  margin: 20px;
+  /* padding: 10px; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: hsla(243, 19%, 19%, 0.432);
+  box-shadow: 7px 7px 7px rgba(33, 31, 31, 0.103);
+}
+
+.s-box-number {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  /* margin-left: 6px; */
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.s-box-number p {
+  text-align: center;
+  /* font-size: 1.4rem; */
+  /* margin-top: 20px; */
+  /* margin-bottom: 10px; */
+  /* margin-right: 24px;  */
+}
+
+.s-cv-number {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.s-cv-number p {
+  font-size: 11px;
+  margin-left: 30px;
+  padding-right: 30px;
+}
+
+.s-in-ex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 4px rgba(54, 51, 51, 0.103);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.s-in-ex p {
+  margin-top: 10px;
+}
+
+.s-in {
+  width: 50%;
+  margin-top: 10px;
+  color: green;
+}
+
+.s-ex {
+  width: 50%;
+  margin-top: 10px;
+  color: red;
+}
+
+.s-in p:first-child {
+  border-radius: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.075);
+  color: black;
+  background-color: rgb(255, 255, 255);
+  padding: 3px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.s-ex p:first-child {
+  border-radius: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.075);
+  color: black;
+  background-color: rgb(255, 255, 255);
+  padding: 3px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.s-detail {
+  margin-top: 30%;
+  width: 100%;
+  display: flex;
+  color: #485c6b;
+}
+
+.s-detail h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.s-detail p {
+  margin-left: 100px;
+  text-align: right;
+  float: right;
+}
+
+.s-box-detail1 {
+  width: 100%;
+  background-color: black;
+}
+
+.s-box-detail1 {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 4px rgba(54, 51, 51, 0.103);
+  color: black;
+  border-radius: 10px;
+}
+
+.s-box-detail1 img {
+  margin: 10px;
+}
+
+.s-box-detail1 div,
+p {
+  margin: 10px;
+}
+
+.s-tran-green {
+  color: green;
+  text-align: right;
+  float: right;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.s-tran-red {
+  color: red;
+  text-align: right;
+  float: right;
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.s-box-detail2 {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 4px rgba(54, 51, 51, 0.103);
+  color: black;
+  border-radius: 10px;
+}
+
+.s-box-detail2 img {
+  margin: 10px;
+}
+
+.s-box-detail2 div,
+p {
+  margin: 10px;
+}
+
+.s-box-detail3 {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 4px rgba(54, 51, 51, 0.103);
+  color: black;
+  border-radius: 10px;
+}
+
+.s-box-detail3 img {
+  margin: 10px;
+}
+
+.s-box-detail3 div,
+p {
+  margin: 10px;
+}
+
+.s-box-detail4 {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 4px rgba(54, 51, 51, 0.103);
+  color: black;
+  border-radius: 10px;
+}
+
+.s-box-detail4 img {
+  margin: 10px;
+}
+
+.s-box-detail4 div,
+p {
+  margin: 10px;
+}
