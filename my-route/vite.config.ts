@@ -15,9 +15,6 @@ export default defineConfig({
     },
     extensions: ['.ts', '.tsx', '.js']
   },
-  css: {
-    modules: false
-  },
 
   server: {
     open: true 
