@@ -17,6 +17,7 @@ import Test1 from "@components/Test1";
 import Test2 from "@components/Test2";
 import Test3_1 from "@components/Test31";
 import Test3_2 from "@components/Test32";
+import Card from "@components/Card";
 
 const route = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const route = createBrowserRouter([
   {
     path: "test31",
     element: <Test3_1 />,
+  },
+  {
+    path: "card",
+    element: <Card />,
   },
   {
     path: "test32",
