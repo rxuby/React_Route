@@ -4,9 +4,16 @@ cd my-route
 
 path
 
-workshop 1 : /test1
+Workshop CSS
 
-workshop 2 : /test2
+- workshop 1 : /test1
 
-workshop 3 : /test31, /test32
+- workshop 2 : /test2
+
+- workshop 3 : /test31, /test32
+
+Workshop Tailwind CSS
+
+- /card
+
 
