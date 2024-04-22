@@ -4,11 +4,12 @@
   font-family: "Inter", sans-serif;
 }
 
-.screen{
+/* workshop 2 */
+.screen {
   justify-content: center;
-  
 }
 
+/* workshop 1 */
 .body {
   display: flex;
   justify-content: center;
@@ -58,6 +59,17 @@
   color: white;
 }
 
+.button5 {
+  background-color: #ffed4a;
+  border: 2px solid rgb(32, 32, 118);
+  box-shadow: 0px 8px 0px rgb(32, 32, 118);
+  color: rgb(32, 32, 118);
+  margin-bottom: 10%;
+  padding: 20px;
+  width: 60%;
+  /* color: white; */
+}
+
 .button1:hover,
 .button1:active {
   width: 65%;
@@ -92,6 +104,16 @@
   box-shadow: 0px 0px 10px 0px rgba(23, 114, 166, 0.8);
   transition: 0.5s;
 }
+
+.button5:hover {
+  background-color: #49bdee;
+}
+.button5:active {
+  box-shadow: 0px 5px 0px 0px rgba(12, 74, 110, 0.8);
+  transform: translateY(4px);
+}
+
+/* workshop 2 */
 .nav {
   width: 100%;
   display: flex;
@@ -182,8 +204,6 @@
   font-size: 53px;
   color: rgba(0, 0, 0, 0.668);
 }
-
-
 
 .menu {
   display: flex;
