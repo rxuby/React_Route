@@ -1,4 +1,3 @@
-import React from "react";
 import { data_new } from "../data_new";
 import { Link, useParams } from "react-router-dom";
 
@@ -23,7 +22,7 @@ const AllNews = () => {
               <Link
                 to={`/home/allnews/${filteredNews.id}/${news.id}?viewer=Khing`}
               >
-                <div key={news.id} className="border rounded-lg p-4 mb-4 text-left shadow-md ">
+                <div key={news.id} className="border rounded-lg p-4 mb-4 text-left shadow-md w-[50em] ">
                   <p className="text-gray-400 text-sm m-1">{news.date}</p>
                   <h4 className="text-slate-800 font-semibold m-1">
                     {news.headline}
@@ -39,7 +38,7 @@ const AllNews = () => {
       ) : (
         data_new[0]?.type_new.map((category) => (
           <div key={category.id} >
-            <h3 className="text-slate-800 text-xl font-semibold mb-5">{category.name}</h3>
+            <h3 className="text-slate-800 text-xl font-semibold mb-5 ">{category.name}</h3>
             {category.news_type
               .sort(
                 (a, b) =>
@@ -49,7 +48,7 @@ const AllNews = () => {
                 <Link
                   to={`/home/allnews/${category.id}/${news.id}?viewer=Khing`}
                 >
-                  <div key={news.id} className="border rounded-lg p-4 mb-4 text-left shadow-md">
+                  <div key={news.id} className="border rounded-lg p-4 mb-4 text-left shadow-md w-[50em] ">
                     <p className="text-gray-400 text-sm m-1">{news.date}</p>
                     <h4 className="text-slate-800 font-semibold m-1">
                       {news.headline}

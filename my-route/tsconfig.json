@@ -28,7 +28,8 @@
       "@asserts/*": ["assets/*"],
       "@functions/*": ["functions/*"],
       "@pages/*": ["pages/*"],
-      "@images/*": ["images/*"]
+      "@images/*": ["images/*"],
+      "@fonts/*": ["fonts/*"]
     }
   },
   "include": ["src"],

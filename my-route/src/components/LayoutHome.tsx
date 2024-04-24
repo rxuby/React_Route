@@ -7,8 +7,8 @@ const LayoutHome: React.FC = () => {
   return (
     <>
       <div>
-        <nav className="bg-slate-600 ">
-          <ul className="flex gap-7 pt-3 justify-center items-center border-none">
+        <nav className="bg-slate-600 !font-kanit ">
+          <ul className="flex gap-7 pt-3 justify-center items-center border-none ">
             {/* <li className="">
               <Link to="/"><FaReact /></Link>
             </li> */}

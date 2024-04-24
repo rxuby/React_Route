@@ -1,3 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base{
+  @font-face {
+    font-family: 'Kanit';
+    src: url(./fonts/Kanit/Kanit-Regular.ttf) format('ttf');
+  }
+} */
+
+@layer base {
+  .kanit {
+    font-family: "Kanit", sans-serif;
+  }
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -47,20 +64,18 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  position: fixed; 
-  top: 0; 
+  position: fixed;
+  top: 0;
   left: 0;
-  z-index: 1000; 
+  z-index: 1000;
   padding-left: 100px;
-  
+
   box-shadow: 0px 2px 8px #5f60b2d2;
 }
 
-
 nav img {
   width: 40px;
-  height: 40px; 
-
+  height: 40px;
 }
 
 /* button {
@@ -92,15 +107,14 @@ button:active {
 }
  */
 
- button {
+button {
   width: 70%;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-  background-color: #1e90ff; 
-  color: #ffffff; 
+  background-color: #1e90ff;
+  color: #ffffff;
 }
-

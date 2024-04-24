@@ -18,6 +18,11 @@ import Test2 from "@components/Test2";
 import Test3_1 from "@components/Test31";
 import Test3_2 from "@components/Test32";
 import Card from "@components/Card";
+import Ex1 from "@components/Ex1";
+import RegisterForm from "@components/Register/RegisterForm";
+import RegisStep1 from "@components/Register/RegisStep1";
+import RegisStep2 from "@components/Register/RegisStep2";
+import RegisStep3 from "@components/Register/RegisStep3";
 
 const route = createBrowserRouter([
   {
@@ -43,6 +48,26 @@ const route = createBrowserRouter([
   {
     path: "test32",
     element: <Test3_2 />,
+  },
+  {
+    path: "ex1",
+    element: <Ex1 />,
+  },
+  {
+    path: "register",
+    element: <RegisterForm />,
+  },
+  {
+    path: "regis1",
+    element: <RegisStep1 />,
+  },
+  {
+    path: "regis2",
+    element: <RegisStep2 />,
+  },
+  {
+    path: "regis3",
+    element: <RegisStep3 />,
   },
 
   {

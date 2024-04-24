@@ -8,7 +8,11 @@ export default {
     // screen:{
     //   'lg': '1024px',
     // },
-    extend: {},
+    extend: {
+      fontFamily:{
+        'kanit':["Kanit"]
+      }
+    },
   },
   plugins: [],
 }
