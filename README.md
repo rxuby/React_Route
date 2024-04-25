@@ -16,4 +16,8 @@ Workshop Tailwind CSS
 
 - /card
 
+Workshop Frame CSS
+
+- /register
+
 
