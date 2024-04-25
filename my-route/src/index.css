@@ -11,9 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;
+  /* -webkit-user-select: none;  */
+  /* -ms-user-select: none; 
+  user-select: none; */
   width: 100%;
   height: auto;
   /* overflow: hidden; */
@@ -39,10 +39,10 @@ nav a:active{
 }
 
 body {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
   display: flex;
-  place-items: center;
+  place-items: center; */
   /* background-image:linear-gradient(0deg,
   rgba(200, 200, 200, 0.5),
   rgba(200, 200, 200, 0.5)), url("./lf.jpg"); */

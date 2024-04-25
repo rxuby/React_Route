@@ -1,73 +1,56 @@
 import React from "react";
-import type { FormProps } from "antd";
 import { Button, Checkbox, Form, Input } from "antd";
 
 export type FieldType = {
-  username?: string;
-  password?: string;
-  remember?: string;
+  email?: string;
+  phone?: RegExp;
 };
 
-const onFinish: FormProps<FieldType>["onFinish"] = (values) => {
-  console.log("Success:", values);
-};
-
-const onFinishFailed: FormProps<FieldType>["onFinishFailed"] = (errorInfo) => {
-  console.log("Failed:", errorInfo);
-};
-
-type props = {
-  onSubmit: (e: FieldType) => void;
-  
-};
-
-
-
-const RegisStep1: React.FC<props> = ({ onSubmit }) => {
+const RegisStep1: React.FC = () => {
   return (
-    <Form
-      name="basic"
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 16 }}
-      style={{ maxWidth: 600 }}
-      initialValues={{ remember: true }}
-      onFinish={onSubmit}
-      onFinishFailed={onFinishFailed}
-      autoComplete="off"
-    >
+    <>
+    <div>
+        <h1 className="mt-2 mb-2 text-left text-[18px] font-semibold  ">Contact :</h1>
       <Form.Item<FieldType>
-        label="Username"
-        name="username"
-        rules={[{ required: true, message: "Please input your username!" }]}
+        label="Email" 
+        name="email"
+        rules={[
+          { required: true, message: "Please input your email!" },
+          {
+            type: "email",
+          },
+        ]}
       >
         <Input />
       </Form.Item>
 
       <Form.Item<FieldType>
-        label="Password"
-        name="password"
-        rules={[{ required: true, message: "Please input your password!" }]}
+        label="Phone"
+        name="phone"
+        rules={[
+          { required: true, message: "Please input your phone number!" },
+          {
+            pattern: /^[0-9]{10}$/,
+            message: "Please input valid phone number!",
+          },
+        ]}
       >
-        <Input.Password />
+        <Input />
       </Form.Item>
 
-      <Form.Item<FieldType>
-        name="remember"
-        valuePropName="checked"
-        wrapperCol={{ offset: 8, span: 16 }}
-      ></Form.Item>
-
-      <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+      {/* <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
         <div className="flex flex-row">
           <Button type="primary" htmlType="submit">
             Next
           </Button>
-          <Button type="primary" htmlType="submit">
+          <Button onClick={onPrev} type="primary">
             Previous
           </Button>
         </div>
-      </Form.Item>
-    </Form>
+      </Form.Item> */}
+      {/* // </Form> */}
+      </div>
+    </>
   );
 };
 
