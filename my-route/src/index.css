@@ -20,7 +20,9 @@
   
   
 }
-
+.ant-form-item-required{
+  color: #fff !important;
+}
 .l{
   font-family: "Kanit"
 }

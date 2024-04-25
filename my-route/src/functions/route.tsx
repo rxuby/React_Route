@@ -23,6 +23,7 @@ import RegisterForm from "@components/Register/RegisterForm";
 import RegisStep1 from "@components/Register/RegisStep1";
 import RegisStep2 from "@components/Register/RegisStep2";
 import RegisStep3 from "@components/Register/RegisStep3";
+import FormRedux from "@components/FormRegister";
 
 const route = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const route = createBrowserRouter([
   {
     path: "regis3",
     element: <RegisStep3 />,
+  },
+  {
+    path: "redux",
+    element: <FormRedux />,
   },
 
   {

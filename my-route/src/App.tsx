@@ -2,11 +2,13 @@ import { Route, RouterProvider, Routes, useRoutes } from "react-router-dom";
 import "./App.css";
 import router from "@functions/route";
 import { Button, ConfigProvider, Space } from "antd";
-import {config_theme} from "@components/ConfigTheme"
+import { config_theme } from "@components/ConfigTheme";
+import Counter from "./components/Counter";
+import Register from "./components/FormRegister"
 
 function App() {
   return (
-    <RouterProvider router={router}/>
+   <RouterProvider router={router}/>
 
     // <ConfigProvider
     //   theme={
@@ -18,6 +20,15 @@ function App() {
     //     <Button>Default</Button>
     //   </Space>
     // </ConfigProvider>
+
+    // <>
+    //   <div>
+      
+    //     {/* <Counter /> */}
+    //     <Register/>
+        
+    //   </div>
+    // </>
   );
 }
 

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import type { FormProps } from "antd";
 import { Button, Checkbox, Flex, Form, Input } from "antd";
 import type { DatePickerProps } from "antd";
 import { DatePicker, Radio, Space } from "antd";
@@ -7,7 +6,6 @@ import type { RadioChangeEvent } from "antd";
 import { Divider } from "antd"; // ลบการนำเข้าที่ซ้ำกันที่นี่ออก
 import type { CheckboxProps, GetProp } from "antd";
 import { Switch } from "antd";
-import { start } from "repl";
 
 export type FieldType = {
   bday?: Date;
