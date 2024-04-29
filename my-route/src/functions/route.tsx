@@ -24,11 +24,18 @@ import RegisStep1 from "@components/Register/RegisStep1";
 import RegisStep2 from "@components/Register/RegisStep2";
 import RegisStep3 from "@components/Register/RegisStep3";
 import FormRedux from "@components/FormRegister";
+import Testapi from "@api/fetchApi";
+import Landing from "@components/LandingPage";
+import LandingPage from "@components/LandingPage";
 
 const route = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />,
+  },
+  {
+    path: "/",
+    element: <LandingPage/>,
   },
   {
     path: "test1",
@@ -74,9 +81,13 @@ const route = createBrowserRouter([
     path: "redux",
     element: <FormRedux />,
   },
+  {
+    path: "testapi",
+    element: <Testapi />,
+  },
 
   {
-    path: "/",
+    path: "/mainpage",
     element: <MainPage />,
   },
   {

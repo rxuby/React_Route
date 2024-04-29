@@ -29,7 +29,9 @@
       "@functions/*": ["functions/*"],
       "@pages/*": ["pages/*"],
       "@images/*": ["images/*"],
-      "@fonts/*": ["fonts/*"]
+      "@fonts/*": ["fonts/*"],
+      "@api/*": ["api/*"]
+     
     }
   },
   "include": ["src"],

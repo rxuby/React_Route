@@ -10,7 +10,8 @@ export default {
     // },
     extend: {
       fontFamily:{
-        'kanit':["Kanit"]
+        'kanit':["Kanit"],
+        'varelaround':["VarelaRound"]
       }
     },
   },

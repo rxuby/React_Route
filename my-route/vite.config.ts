@@ -12,7 +12,8 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "src/assets"),
       "@pages": path.resolve(__dirname, "src/pages"),
       "@images": path.resolve(__dirname, "src/images"),
-      "@fonts": path.resolve(__dirname, "src/fonts")
+      "@fonts": path.resolve(__dirname, "src/fonts"),
+      "@api": path.resolve(__dirname, "src/api")
 
     },
     extensions: ['.ts', '.tsx', '.js']
