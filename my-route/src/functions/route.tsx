@@ -27,6 +27,10 @@ import FormRedux from "@components/FormRegister";
 import Testapi from "@api/fetchApi";
 import Landing from "@components/LandingPage";
 import LandingPage from "@components/LandingPage";
+import YgoHome from "@api/้homeYugioh";
+import PurrelyPage from "@api/purrelyPage";
+import PokemonPage from "@components/Pokemon/PokemonDetail";
+import PokemonFecth from "@components/Pokemon/PokemonFetch";
 
 const route = createBrowserRouter([
   {
@@ -35,7 +39,7 @@ const route = createBrowserRouter([
   },
   {
     path: "/",
-    element: <LandingPage/>,
+    element: <LandingPage />,
   },
   {
     path: "test1",
@@ -84,6 +88,22 @@ const route = createBrowserRouter([
   {
     path: "testapi",
     element: <Testapi />,
+  },
+  {
+    path: "ygohome",
+    element: <YgoHome />,
+  },
+  {
+    path: "purrely",
+    element: <PurrelyPage />,
+  },
+  {
+    path: "pokemonhome",
+    element: <PokemonPage />,
+  },
+  {
+    path: "pokemonfetch",
+    element: <PokemonFecth />,
   },
 
   {

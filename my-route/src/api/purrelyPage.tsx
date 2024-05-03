@@ -24,6 +24,7 @@ const FetchApi = () => {
   const [data, setData] = useState<TypeApi[]>();
   const [selected, setSelected] = useState<TypeApi | undefined>();
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -38,7 +39,7 @@ const FetchApi = () => {
 
   const fetchDataAxios = async () => {
     const result = await axios.get(
-      "https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=melffy"
+      "https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=purrely"
     );
     const _result = result.data.data;
     setData(_result);
@@ -53,7 +54,7 @@ const FetchApi = () => {
       <motion.div>
         <div
           style={{ backgroundAttachment: "fixed" }}
-          className="flex flex-col justify-center items-center content-center  bg-gradient-to-t from-rose-100 via-rose-100 to-white font-varelaround "
+          className="flex flex-col justify-center items-center content-center  bg-gradient-to-t from-indigo-950 via-indigo-100 to-white font-varelaround "
         >
           <div className="  mt-6 mb-6 flex items-center justify-center drop-shadow-xl ">
             <motion.img
@@ -65,7 +66,7 @@ const FetchApi = () => {
               alt="logo"
             />
           </div>
-          <div className="bg-white p-12 pl-8 pr-8  rounded-t-[30px] shadow-2xl shadow-rose-500/40 w-[960px] h-full min-h-screen ">
+          <div className="bg-white p-12 pl-8 pr-8  rounded-t-[30px] shadow-2xl shadow-indigo-500/40 w-[960px] h-full min-h-screen ">
             <div className="grid grid-cols-4 grid-flow-row gap-4 ">
               {data &&
                 data.map((item, index) => {

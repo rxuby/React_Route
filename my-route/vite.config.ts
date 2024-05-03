@@ -13,7 +13,8 @@ export default defineConfig({
       "@pages": path.resolve(__dirname, "src/pages"),
       "@images": path.resolve(__dirname, "src/images"),
       "@fonts": path.resolve(__dirname, "src/fonts"),
-      "@api": path.resolve(__dirname, "src/api")
+      "@api": path.resolve(__dirname, "src/api"),
+      "@services": path.resolve(__dirname, "src/services")
 
     },
     extensions: ['.ts', '.tsx', '.js']

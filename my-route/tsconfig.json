@@ -30,7 +30,8 @@
       "@pages/*": ["pages/*"],
       "@images/*": ["images/*"],
       "@fonts/*": ["fonts/*"],
-      "@api/*": ["api/*"]
+      "@api/*": ["api/*"],
+      "@services/*": ["services/*"]
      
     }
   },
