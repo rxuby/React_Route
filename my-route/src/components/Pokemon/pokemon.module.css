@@ -1,0 +1,16 @@
+.loading-item {
+  background-color: #383838;
+  border: 1px solid #484848;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

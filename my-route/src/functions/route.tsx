@@ -5,8 +5,6 @@ import {
   useRoutes,
 } from "react-router-dom";
 // import "./App.css";
-
-import path from "path";
 import NotFound from "@components/NotFound";
 import MainPage from "@components/MainPage";
 import HomePage from "@components/HomePage";
@@ -25,12 +23,11 @@ import RegisStep2 from "@components/Register/RegisStep2";
 import RegisStep3 from "@components/Register/RegisStep3";
 import FormRedux from "@components/FormRegister";
 import Testapi from "@api/fetchApi";
-import Landing from "@components/LandingPage";
 import LandingPage from "@components/LandingPage";
 import YgoHome from "@api/้homeYugioh";
 import PurrelyPage from "@api/purrelyPage";
-import PokemonPage from "@components/Pokemon/PokemonDetail";
-import PokemonFecth from "@components/Pokemon/PokemonFetch";
+import PokemonHome from "@components/Pokemon/PokemonHome";
+import PokemonDetail from "@components/Pokemon/PokemonDetail";
 
 const route = createBrowserRouter([
   {
@@ -99,11 +96,12 @@ const route = createBrowserRouter([
   },
   {
     path: "pokemonhome",
-    element: <PokemonPage />,
+    element: <PokemonHome />,
   },
+
   {
-    path: "pokemonfetch",
-    element: <PokemonFecth />,
+    path: "/pokemondetail/:no",
+    element: <PokemonDetail />,
   },
 
   {

@@ -4,72 +4,69 @@ import { useNavigate } from "react-router-dom";
 function LandingPage() {
   const navigator = useNavigate();
   return (
-    <div>
-      <div>
-        <h1>WorkShop</h1>
-      </div>
-      <div>
-        <button
-          className="text-white p-4 bg-slate-700 shadow-lg shadow-indigo-500/50 mb-6"
-          onClick={() => navigator("/mainpage")}
-        >
-          Ogs Daily News
-        </button>
-      </div>
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <div className="text-4xl font-bold text-gray-800 mb-8">WorkShop</div>
+      <button
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4"
+        onClick={() => navigator("/mainpage")}
+      >
+        Ogs Daily News
+      </button>
 
-      <div className="flex">
+      <div className="grid grid-cols-2 gap-4">
         <button
-          className="text-white p-4 bg-slate-700 shadow-lg shadow-indigo-500/50 mb-6"
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           onClick={() => navigator("/test1")}
         >
           CSS workshop 1
         </button>
         <button
-          className="text-white p-4 bg-slate-700 shadow-lg shadow-indigo-500/50 mb-6"
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           onClick={() => navigator("/test2")}
         >
           CSS workshop 2
         </button>
         <button
-          className="text-white p-4 bg-slate-700 shadow-lg shadow-indigo-500/50 mb-6"
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           onClick={() => navigator("/test31")}
         >
           CSS workshop 3
         </button>
         <button
-          className="text-white p-4 bg-slate-700 shadow-lg shadow-indigo-500/50 mb-6"
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           onClick={() => navigator("/test32")}
         >
           CSS workshop 4
         </button>
       </div>
 
-      <div>
-        <button
-          className="text-white p-4 bg-slate-700 shadow-lg shadow-indigo-500/50 mb-6"
-          onClick={() => navigator("/card")}
-        >
-          Tailwind CSS
-        </button>
-      </div>
+      <button
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded my-4"
+        onClick={() => navigator("/card")}
+      >
+        Tailwind CSS
+      </button>
 
-      <div>
-        <button
-          className="text-white p-4 bg-slate-700 shadow-lg shadow-indigo-500/50 mb-6"
-          onClick={() => navigator("/register")}
-        >
-          CSS Framework & Ant Design
-        </button>
-      </div>
+      <button
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded my-4"
+        onClick={() => navigator("/register")}
+      >
+        CSS Framework & Ant Design
+      </button>
 
-      <div>
-        <button
-          className="text-white p-4 bg-slate-700 shadow-lg shadow-indigo-500/50 mb-6"
-          onClick={() => navigator("/testapi")}
-        >
-          API Connection
-        </button>
-      </div>
+      <button
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded my-4"
+        onClick={() => navigator("/testapi")}
+      >
+        API Connection
+      </button>
+
+      <button
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded my-4"
+        onClick={() => navigator("/pokemonhome")}
+      >
+        Pokemon
+      </button>
     </div>
   );
 }
