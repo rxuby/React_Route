@@ -12,6 +12,7 @@ import {
 } from "@services/PokemonService/PokemonResponse/pokemonResponse";
 import PokemonEvolution from "./PokemonEvolution";
 import { motion, AnimatePresence } from "framer-motion";
+import PokemonNotfound from "./PokemonNotfound";
 
 const PokemonDetail = () => {
   const { no } = useParams();
@@ -24,6 +25,10 @@ const PokemonDetail = () => {
 
   if (isLoading) {
     return <LoadingDetail />;
+  }
+
+  if (!Pokemon?.no) {
+    return <div><PokemonNotfound/></div>;
   }
 
   function progressBar(stat: number | undefined) {

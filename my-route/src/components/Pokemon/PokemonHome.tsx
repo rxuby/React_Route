@@ -13,9 +13,8 @@ import { useState } from "react";
 function PokemonHome() {
   const [searchParams] = useSearchParams();
   const [type, setType] = useState(searchParams.get("type") || "");
-  const [all, setAll] = useState();
   const { data, isLoading, isFetching } = useGetPokemonsQuery(
-    searchParams.get("type") || undefined
+    searchParams.get("type") 
   );
 
   const availableTypes = Object.keys(ColorPokemon) as TypePokemon[];

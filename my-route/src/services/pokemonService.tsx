@@ -10,9 +10,9 @@ const pokemonService = createApi({
     baseUrl: "https://pokemon-api.cyclic.app/api/v1/",
   }),
   endpoints: (builder) => ({
-    getPokemons: builder.query<rawData, string | undefined>({
+    getPokemons: builder.query<rawData, string | null>({
       query: () => `pokemon`,
-      transformResponse: (response: rawData, _, type: string | undefined) => ({
+      transformResponse: (response: rawData, _, type: string | null) => ({
         ...response,
         data: {
           data: response.data.data.filter((pokemon) =>

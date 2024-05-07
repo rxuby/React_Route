@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 import PokeLoad from "@images/pokemon-transparent-24.png";
 
-const LoadingDetail = () => {
+const PokemonNotfound = () => {
   const { no } = useParams();
   const { data } = useGetPokemonQuery(no);
 
@@ -46,4 +46,4 @@ const LoadingDetail = () => {
   );
 };
 
-export default LoadingDetail;
+export default PokemonNotfound;
