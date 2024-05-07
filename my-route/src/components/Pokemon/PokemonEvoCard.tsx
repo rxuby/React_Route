@@ -1,7 +1,10 @@
 import React from "react";
 import { useGetPokemonQuery } from "@services/pokemonService";
 import { FaArrowRight } from "react-icons/fa6";
-import { ColorPokemon } from "@services/PokemonService/PokemonResponse/pokemonResponse";
+import {
+  ColorPokemon,
+  TypePokemon,
+} from "@services/PokemonService/PokemonResponse/pokemonResponse";
 
 function PokemonEvoCard({
   no,
@@ -44,13 +47,25 @@ function PokemonEvoCard({
               />
 
               <p className="text-center mt-2">#{Pokemon?.no}</p>
-              <p className="text-center mt-2">{Pokemon?.species}</p>
+              <p
+                className="text-center mt-2 rounded-md capitalize flex justify-center content-center items-center mx-6 p-1 text-white"
+                style={{
+                  backgroundColor:
+                    ColorPokemon[Pokemon?.type[0] as unknown as TypePokemon],
+                    boxShadow: `0px 1px 20px ${ColorPokemon[Pokemon?.type[0] as unknown as TypePokemon]}`,
+                }}
+              >
+                {Pokemon?.species}
+              </p>
               <div className="flex justify-center mt-2">
                 {Pokemon?.type.map((type) => (
                   <img
                     key={type}
                     width={"28px"}
-                    style={{ backgroundColor: ColorPokemon[type] }}
+                    style={{
+                      backgroundColor: ColorPokemon[type],
+                      boxShadow: `0px 4px 20px ${ColorPokemon[type]}`,
+                    }}
                     className="p-[5px] mb-[5px] rounded-full m-1"
                     src={`https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/Others/type-icons/png/${type}.png`}
                     alt={type}

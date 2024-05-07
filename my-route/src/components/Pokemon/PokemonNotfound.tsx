@@ -5,6 +5,7 @@ import PokemonLogo from "@images/International_Pokémon_logo 1.png";
 import { useGetPokemonQuery } from "@services/pokemonService";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
+import PokeLoad from "@images/pokemon-transparent-24.png";
 
 const LoadingDetail = () => {
   const { no } = useParams();
@@ -32,9 +33,15 @@ const LoadingDetail = () => {
           </div>
         </div>
       </div>
-        <div className="w-full flex justify-center content-center items-center h-96">
-            <p>Not Found Pokemon!</p>
-        </div>
+      <div className=" flex flex-col justify-center content-center items-center relative top-28 ">
+        <img
+          className="opacity-20"
+          width={"15%"}
+          src={PokeLoad}
+          alt="Pikachu"
+        />
+        <h1 className="opacity-20">Not Found Pokemon!</h1>
+      </div>
     </div>
   );
 };

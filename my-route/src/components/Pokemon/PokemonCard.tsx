@@ -49,37 +49,37 @@ const PokemonCard = ({ pokemonData }: { pokemonData: rawData | undefined }) => {
                           <h1 className=" text-grey-600">{pokemon.name}</h1>
                         </div>
                         <div className="flex flex-row  ">
-                          <p className="grid mx-[6px]">
+                          <p className="grid mx-[5px]">
                             <CiHeart className="justify-self-center" />
                             <span className="justify-self-center">
                               {pokemon.stats.hp}
                             </span>
                           </p>
-                          <p className="grid mx-[6px]">
+                          <p className="grid mx-[5px]">
                             <LuSwords className="justify-self-center" />
                             <span className="justify-self-center">
                               {pokemon.stats.attack}
                             </span>
                           </p>
-                          <p className="grid mx-[6px]">
+                          <p className="grid mx-[5px]">
                             <PiShieldCheckeredLight className="justify-self-center" />
                             <span className="justify-self-center">
                               {pokemon.stats.defense}
                             </span>
                           </p>
-                          <p className="grid mx-[6px]">
+                          <p className="grid mx-[5px]">
                             <PiBootLight className="justify-self-center" />
                             <span className="justify-self-center">
                               {pokemon.stats.speed}
                             </span>
                           </p>
-                          <p className="grid mx-[6px]">
+                          <p className="grid mx-[5px]">
                             <CiStar className="justify-self-center" />
                             <span className="justify-self-center">
                               {pokemon.stats.special}
                             </span>
                           </p>
-                          <p className="grid mx-[6px]">
+                          <p className="grid mx-[5px]">
                             <AiOutlineFire className="justify-self-center" />
 
                             <span className="justify-self-center">

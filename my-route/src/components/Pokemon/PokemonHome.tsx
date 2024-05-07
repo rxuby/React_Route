@@ -8,9 +8,12 @@ import { Link, useSearchParams } from "react-router-dom";
 import PokemonLogo from "@images/International_Pokémon_logo 1.png";
 import LoadingHome from "./LoadingHome";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 function PokemonHome() {
   const [searchParams] = useSearchParams();
+  const [type, setType] = useState(searchParams.get("type") || "");
+  const [all, setAll] = useState();
   const { data, isLoading, isFetching } = useGetPokemonsQuery(
     searchParams.get("type") || undefined
   );
@@ -43,14 +46,16 @@ function PokemonHome() {
           >
             <Link
               to={`/pokemonhome`}
-              className="w-[75px] h-[75px] rounded-full grid grid-cols-1 content-center justify-center bg-slate-400"
+              onClick={() => setType("")}
+              className="w-[75px] h-[75px] rounded-full grid grid-cols-1 content-center justify-center border-2 border-slate-300 text-slate-300"
               style={{
                 display: "inline-block",
                 marginRight: "10px",
                 textDecoration: "none",
-                color: "white",
                 transition: "background-color 0.3s",
                 textTransform: "uppercase",
+                backgroundColor: "" === type ?  "#cbd5e1" : "transparent",
+                color: ("" === type) ? "white" : "",
               }}
             >
               <span className="justify-self-center text-sm font-kanit">
@@ -63,6 +68,7 @@ function PokemonHome() {
               key={index}
               to={`/pokemonhome?type=${item}`}
               className={``}
+              onClick={() => setType(item)}
               style={{
                 display: "inline-block",
                 marginRight: "10px",
@@ -75,8 +81,12 @@ function PokemonHome() {
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="w-[75px] h-[75px] rounded-full grid grid-cols-1 content-center justify-center"
-                style={{ backgroundColor: ColorPokemon[item] }}
+                className="w-[75px] h-[75px] rounded-full grid grid-cols-1 content-center justify-center border-2"
+                style={{
+                  backgroundColor: item === type ? ColorPokemon[item] : "",
+                  borderColor: ColorPokemon[item],
+                  color: !(item === type) ? ColorPokemon[item] : "",
+                }}
               >
                 <img
                   className="absolute rounded-full p-1"
