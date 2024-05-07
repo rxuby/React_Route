@@ -32,9 +32,9 @@ const LoadingDetail = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center content-center items-center mx-auto mt-72">
-        <h1>Loading...</h1>
-      </div>
+        <div className="w-full flex justify-center content-center items-center h-96">
+            <p>Not Found Pokemon!</p>
+        </div>
     </div>
   );
 };

@@ -18,6 +18,31 @@ export const ColorPokemon = {
   
 export type TypePokemon = keyof typeof ColorPokemon;
 
+export type TypeMove = keyof typeof ColorPokemon;
+
+export interface Move {
+  move: string;
+  type: TypeMove[];
+  category: string;
+  pp: number;
+  power: number | null;
+  accuracy: number | null;
+  effect: string;
+}
+
+export interface EvolutionStage {
+  stage: number;
+  method: string;
+  no: string;
+  name: string;
+  url: string;
+  sprite: {
+    redblue: string;
+    redgreen: string;
+    yellow: string;
+  };
+}
+
 export type PokemonDetail = {
     no: string;
   name: string;
@@ -36,6 +61,12 @@ export type PokemonDetail = {
     redgreen: string;
     yellow: string;
   };
+  moves: {
+    byLevelUp: Move[];
+    byTm: Move[];
+    byHm: Move[];
+  };
+  evolution: EvolutionStage[];
 }[]
 
 export type rawData = {

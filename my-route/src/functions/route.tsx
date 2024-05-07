@@ -28,12 +28,13 @@ import YgoHome from "@api/้homeYugioh";
 import PurrelyPage from "@api/purrelyPage";
 import PokemonHome from "@components/Pokemon/PokemonHome";
 import PokemonDetail from "@components/Pokemon/PokemonDetail";
+import PokemonNotfound from "@components/Pokemon/PokemonNotfound"
 
 const route = createBrowserRouter([
-  {
-    path: "*",
-    element: <NotFound />,
-  },
+  // {
+  //   path: "*",
+  //   element: <NotFound />,
+  // },
   {
     path: "/",
     element: <LandingPage />,
@@ -102,6 +103,10 @@ const route = createBrowserRouter([
   {
     path: "/pokemondetail/:no",
     element: <PokemonDetail />,
+  },
+  {
+    path: "*",
+    element: <PokemonNotfound />,
   },
 
   {

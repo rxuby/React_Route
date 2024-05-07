@@ -7,19 +7,21 @@ import {
 import { Link, useSearchParams } from "react-router-dom";
 import PokemonLogo from "@images/International_Pokémon_logo 1.png";
 import LoadingHome from "./LoadingHome";
+import { motion } from "framer-motion";
 
 function PokemonHome() {
   const [searchParams] = useSearchParams();
-  const { data, isLoading } = useGetPokemonsQuery(
+  const { data, isLoading, isFetching } = useGetPokemonsQuery(
     searchParams.get("type") || undefined
   );
 
   const availableTypes = Object.keys(ColorPokemon) as TypePokemon[];
 
   return (
-    <div className="bg-black h-screen">
+    <div className="bg-white h-screen ">
       <div
-        className="rounded-b-full pb-10 bg-gradient-to-r from-black from-1%   via-white via-50% to-black to-99%"
+        className="rounded-b-full pb-10 bg-red-600"
+        // bg-gradient-to-r from-black from-1%   via-white via-50% to-black to-99%
         style={{ borderRadius: "0 0 100% 100%" }}
       >
         <div className="flex justify-center items-center pt-6">
@@ -31,52 +33,72 @@ function PokemonHome() {
         >
           DEX
         </h1>
-
-        <div className="links-container">
-          <Link
-            to={`/pokemonhome`}
-            style={{
-              display: "inline-block",
-              padding: "10px 15px",
-              marginRight: "10px",
-              borderRadius: "100%",
-              textDecoration: "none",
-              color: "white",
-              backgroundColor: "#F4D03F",
-              transition: "background-color 0.3s",
-              // transform: "skew(-20deg)",
-            }}
+      </div>
+      <div className="flex justify-center items-center pt-6">
+        <div className="grid grid-cols-8 gap-2 w-[800px] content-center">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-[75px] h-[75px] rounded-full grid grid-cols-1 content-center justify-center"
           >
-            All
-          </Link>
+            <Link
+              to={`/pokemonhome`}
+              className="w-[75px] h-[75px] rounded-full grid grid-cols-1 content-center justify-center bg-slate-400"
+              style={{
+                display: "inline-block",
+                marginRight: "10px",
+                textDecoration: "none",
+                color: "white",
+                transition: "background-color 0.3s",
+                textTransform: "uppercase",
+              }}
+            >
+              <span className="justify-self-center text-sm font-kanit">
+                All
+              </span>
+            </Link>
+          </motion.div>
           {availableTypes.map((item, index) => (
             <Link
               key={index}
               to={`/pokemonhome?type=${item}`}
-              className="pokemon-link"
+              className={``}
               style={{
                 display: "inline-block",
-                padding: "10px 15px",
                 marginRight: "10px",
-                borderRadius: "100%",
                 textDecoration: "none",
                 color: "white",
-                backgroundColor: ColorPokemon[item],
                 transition: "background-color 0.3s",
-                // transform: "skew(-20deg)",
+                textTransform: "uppercase",
               }}
             >
-              {item}
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-[75px] h-[75px] rounded-full grid grid-cols-1 content-center justify-center"
+                style={{ backgroundColor: ColorPokemon[item] }}
+              >
+                <img
+                  className="absolute rounded-full p-1"
+                  style={{ backgroundColor: ColorPokemon[item] }}
+                  width={"30px"}
+                  height={"30px"}
+                  key={item}
+                  src={`https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/Others/type-icons/png/${item}.png`}
+                  alt={`img-${index}`}
+                />
+                <span className="justify-self-center text-sm font-kanit">
+                  {item}
+                </span>
+              </motion.div>
             </Link>
           ))}
         </div>
       </div>
 
-      {isLoading ? (
-        <LoadingHome />
-      ) : (
-        <PokemonCard pokemonData={data} />
-      )}
+      <div>
+        {isFetching ? <LoadingHome /> : <PokemonCard pokemonData={data} />}
+      </div>
     </div>
   );
 }
