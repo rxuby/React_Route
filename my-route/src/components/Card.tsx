@@ -12,8 +12,8 @@ import { PiStudentBold } from "react-icons/pi";
 const Card = () => {
   return (
     <>
-      <div className="w-full">
-        <div className="w-full p-14 lg:space-x-36 border-[6px] border-black flex-col lg:flex-row  items-center justify-center content-center rounded-[30px]  text-white lg:text-text-rose-600 lg:flex flex  mb-20 bg-rose-600 shadow-xl">
+      <div className="w-full lg:flex lg:flex-col lg:justify-center lg:items-center">
+        <div className="w-full mt-10 p-14 lg:space-x-36 border-[6px] border-black flex-col lg:flex-row  items-center justify-center content-center rounded-[30px]  text-white lg:text-text-rose-600 lg:flex  flex  mb-20 bg-rose-600 shadow-xl lg:h-[24rem]  lg:w-[50rem]">
           <div className="">
             <img
               className="drop-shadow-xl border-[6px] border-black rounded-full w-48
@@ -30,7 +30,7 @@ const Card = () => {
           </div>
         </div>
 
-        <div className="w-full p-14  border-[6px] border-black flex-col lg:flex-row-reverse  items-center justify-between content-center rounded-[30px]  text-white lg:text-text-rose-600 lg:flex flex  mb-20 bg-white shadow-xl">
+        <div className="w-full p-14  border-[6px] border-black flex-col lg:flex-row-reverse  items-center justify-between content-center rounded-[30px]  text-white lg:text-text-rose-600 lg:flex flex  mb-20 bg-white shadow-xl lg:h-[24rem] lg:w-[50rem]">
           <div className="">
             <img
               className="border-[6px] border-black rounded-full w-48 lg:w-52 mb-7 lg:ml-4 lg:items-center shadow-xl"

@@ -5,17 +5,17 @@
 
 :root {
   font-family: "Mitr", sans-serif;
-  line-height: 1.5;
+  /* line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
   /* -webkit-user-select: none;  */
   /* -ms-user-select: none; 
   user-select: none; */
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
   /* overflow: hidden; */
   
   
@@ -39,6 +39,10 @@ nav a:hover {
 nav a:active{
   color: #22d3ee;
 }
+
+/* nav a:visited{
+  color: #22d3ee;
+} */
 
 body {
   /* margin: 0;

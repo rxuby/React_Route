@@ -32,7 +32,9 @@ const DetailNew = () => {
   const [searchParams] = useSearchParams();
 
   return (
-    <div className="border-2 rounded-[20px] p-8 mb-4 text-left mt-20 text-sm">
+    <>
+    
+    <div className="border-2 rounded-[20px] p-8 mb-4 text-left mt-36 text-sm  mx-56">
       <div className="text-right">ผู้เข้าชม:{searchParams.get("viewer")}</div>
       {/* <h2>{detail.headline}</h2> */}
       <p>รหัสข่าว: {detail.id}</p>
@@ -42,6 +44,7 @@ const DetailNew = () => {
       <p>ประเภทข่าว: {detail.category}</p>
       <p>สำนักข่าว: {detail.publisher}</p>
     </div>
+    </>
   );
 };
 

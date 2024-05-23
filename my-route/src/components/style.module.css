@@ -12,6 +12,16 @@
 /* workshop 1 */
 .body {
   display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.bodybutton {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -21,28 +31,32 @@
 .button1 {
   background-color: rgb(220, 112, 18);
   box-shadow: 0px 7px 0px rgb(168, 86, 14);
-  margin-bottom: 10%;
+  margin-top: 2%;
+  margin-bottom: 5%;
   padding: 20px;
-  width: 60%;
+  width: 30%;
   color: white;
+  border-radius: 10px;
 }
 
 .button2 {
   background-color: #047857;
   box-shadow: 0px 7px 0px #064e3b;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   padding: 20px;
-  width: 60%;
+  width: 30%;
   color: white;
+  border-radius: 10px;
 }
 
 .button3 {
   background-color: #0369a1;
   box-shadow: 0px 7px 0px #0c4a6e;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   padding: 20px;
-  width: 60%;
+  width: 30%;
   color: white;
+  border-radius: 10px;
 }
 
 .button4 {
@@ -53,10 +67,11 @@
     rgba(249, 88, 234, 1) 79%
   );
   box-shadow: 0px 7px 0px #1772a6;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   padding: 20px;
-  width: 60%;
+  width: 30%;
   color: white;
+  border-radius: 10px;
 }
 
 .button5 {
@@ -64,9 +79,10 @@
   border: 2px solid rgb(32, 32, 118);
   box-shadow: 0px 8px 0px rgb(32, 32, 118);
   color: rgb(32, 32, 118);
-  margin-bottom: 10%;
+  margin-bottom: 2%;
   padding: 20px;
-  width: 60%;
+  width: 30%;
+  border-radius: 10px;
   /* color: white; */
 }
 
@@ -147,6 +163,7 @@
   height: 660px;
   top: 110px;
   left: 370px;
+  /* margin: 20px; */
   border-radius: 30px;
   margin-top: 40px;
   background-size: cover;
@@ -280,6 +297,7 @@
 .cardbox {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   /* flex-wrap: wrap; */
 }
 
@@ -357,11 +375,14 @@
   border-radius: 50px;
   border: 1px solid black;
   margin-top: 80px;
+  margin-bottom: 10px;
   font-size: 20px;
 }
 
 .buttonall:hover {
   background-color: black;
+  color: white;
+  transition: .5s;
 }
 
 /* style from pre-test */
