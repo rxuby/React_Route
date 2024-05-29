@@ -4,7 +4,7 @@ import { data_new } from "../data_new";
 
 const HomePage = () => {
   return (
-    <div className="mt-32 " >
+    <div className="pt-32 bg-white" >
       <h1 className="text-slate-800 text-2xl font-bold mb-5 " style={{fontFamily:"kanit"}}>{data_new[0].title}</h1>
       <p className="mb-8 text-slate-800 text-sm " style={{fontFamily:"kanit"}}>{data_new[0].sub_title}</p>
       {data_new[0].type_new.map((category) => (

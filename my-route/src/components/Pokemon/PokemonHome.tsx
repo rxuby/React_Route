@@ -13,7 +13,7 @@ import { useState } from "react";
 function PokemonHome() {
   const [searchParams] = useSearchParams();
   const [type, setType] = useState(searchParams.get("type") || "");
-  const { data, isLoading, isFetching } = useGetPokemonsQuery(
+  const { data, isFetching } = useGetPokemonsQuery(
     searchParams.get("type") 
   );
 

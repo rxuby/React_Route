@@ -10,7 +10,7 @@ const AllNews = () => {
   );
   console.log(filteredNews);
   return (
-    <div className="p-4 mt-32" >
+    <div className="p-4 pt-32 bg-white" >
       {filteredNews ? (
         <>
           <h3 className="mb-4 text-slate-800 text-xl font-bold " style={{fontFamily:"kanit"}}>{filteredNews.name}</h3>

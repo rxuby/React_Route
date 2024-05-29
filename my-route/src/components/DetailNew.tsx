@@ -34,7 +34,7 @@ const DetailNew = () => {
   return (
     <>
     
-    <div className="border-2 rounded-[20px] p-8 mb-4 text-left mt-36 text-sm  mx-56">
+    <div className=" rounded-[20px] p-8 mb-4 text-left mt-36 text-sm  mx-56 shadow-lg bg-white">
       <div className="text-right">ผู้เข้าชม:{searchParams.get("viewer")}</div>
       {/* <h2>{detail.headline}</h2> */}
       <p>รหัสข่าว: {detail.id}</p>

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function MainPage() {
   const navigator = useNavigate();
   return (
-    <div style={{fontFamily:"kanit"}} className=" m-20 rounded-3xl shadow-xl ">
+    <div style={{fontFamily:"kanit"}} className=" m-20 rounded-3xl shadow-xl bg-white">
       <div className="flex justify-center content-center my-10 ">
         <img src={image} alt="Group 1" />
       </div>
